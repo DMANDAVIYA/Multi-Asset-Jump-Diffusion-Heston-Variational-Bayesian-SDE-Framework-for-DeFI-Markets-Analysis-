@@ -1,0 +1,38 @@
+
+Google Colab SDE Training Instructions
+=====================================
+
+1. UPLOAD DATA TO GOOGLE DRIVE:
+   - Upload the entire 'processed_data/' folder to your Google Drive
+   - Place it at: /content/drive/MyDrive/physics/
+   - Required files:
+     * q_coordinates.csv (log-price time series)
+     * q_velocities.csv (velocity estimates)  
+     * reference_prices.csv (price normalization)
+     * data_summary.json (validation statistics)
+
+2. OPEN COLAB NOTEBOOK:
+   - Upload colab_training_notebook.py to Google Colab
+   - Set runtime to GPU (preferably A100 or V100)
+   - Run all cells in sequence
+
+3. REAL SDE TRAINING:
+   The notebook will:
+   ✅ Implement Black-Scholes SDE: dS_i = μ_i S_i dt + σ_i S_i dW_i
+   ✅ Use Euler-Maruyama integration for SDEs
+   ✅ Estimate parameters via maximum likelihood
+   ✅ Validate with proper statistical tests
+
+4. EXPECTED OUTPUTS:
+   - sde_model.pth (trained drift μ and volatility Σ parameters)
+   - sde_results.pkl (training statistics and validation metrics)
+   
+5. DOWNLOAD RESULTS:
+   After training completes, download results from Drive back to local
+   for step3 analysis.
+
+Mathematical References:
+- Black & Scholes (1973): "The Pricing of Options and Corporate Liabilities"
+- Øksendal (2003): "Stochastic Differential Equations" 
+- Shreve (2004): "Stochastic Calculus for Finance II"
+

@@ -1,0 +1,59 @@
+# Physics Configuration for Geometric Neural Networks
+# ================================================
+
+# Manifold Configuration
+manifold:
+  dimension: 6
+  assets: ['BTC', 'ETH', 'SOL', 'DOGE', 'BNB', 'XRP']
+  regularization_eps: 1.0e-6
+  
+# Lagrangian System
+lagrangian:
+  potential_hidden_dims: [64, 128, 64]
+  activation: 'tanh'
+  dropout: 0.1
+  
+# Training Configuration  
+training:
+  batch_size: 128
+  learning_rate: 1.0e-4
+  epochs: 100
+  physics_weight: 10.0
+  prediction_weight: 1.0
+  conservation_tolerance: 1.0e-4
+  
+# Integration
+integration:
+  method: 'stormer_verlet'  # or 'implicit_midpoint', 'yoshida4'
+  dt: 1.0
+  
+# Data Processing
+data:
+  train_split: 0.8
+  validation_split: 0.2
+  normalize: true
+  
+# Hardware
+hardware:
+  device: 'auto'  # 'auto', 'cpu', 'cuda'
+  precision: 'float32'  # 'float32', 'float64'
+  
+# Physics Validation
+validation:
+  energy_tolerance: 0.01
+  euler_lagrange_tolerance: 0.1
+  symplectic_tolerance: 0.1
+  test_trajectory_length: 100
+  
+# Logging
+logging:
+  print_every: 10
+  save_checkpoints: true
+  checkpoint_dir: 'checkpoints'
+  
+# Visualization
+visualization:
+  create_plots: true
+  save_figures: true
+  figure_format: 'png'
+  dpi: 300

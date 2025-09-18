@@ -1,0 +1,183 @@
+{
+  "analysis_timestamp": "2025-09-15T17:50:25.115023",
+  "model_info": {
+    "model_type": "Jump-Diffusion-Heston-Bayesian SDE",
+    "assets": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "DOGE",
+      "BNB",
+      "XRP"
+    ],
+    "data_frequency": "1-minute",
+    "mathematical_foundation": "Black-Scholes with Merton jumps and Heston stochastic volatility",
+    "training_method": "Bayesian variational inference with ELBO optimization"
+  },
+  "training_summary": {
+    "final_loss": -35.99554815251311,
+    "epochs": 100,
+    "condition_number": 4.251708030700684
+  },
+  "parameter_analysis": {
+    "drift_parameters": [
+      8.071995398495346e-05,
+      -7.223353168228641e-05,
+      7.1073453000281e-05,
+      -7.161566463764757e-05,
+      -2.6407304176245816e-05,
+      9.671748557593673e-05
+    ],
+    "volatility_parameters": [
+      1.0232297427137382e-06,
+      1.0306578133167932e-06,
+      2.993142516061198e-06,
+      3.12528732138162e-06,
+      1.0434898740641074e-06,
+      1.6774702089605853e-06
+    ],
+    "jump_intensities": [
+      0.0001875299058156088,
+      9.999999747378752e-05,
+      0.000103335092717316,
+      9.999999747378752e-05,
+      9.999999747378752e-05,
+      9.999999747378752e-05
+    ],
+    "jump_characteristics": {
+      "mean": [
+        -0.00023765614605508745,
+        -0.0001242804282810539,
+        -0.00011728663230314851,
+        3.643472882686183e-05,
+        0.00010256920359097421,
+        -0.00014424057735595852
+      ],
+      "std": [
+        0.010086585767567158,
+        0.010174933820962906,
+        0.010162591002881527,
+        0.010325823910534382,
+        0.010374898090958595,
+        0.010282394476234913
+      ]
+    },
+    "heston_parameters": {
+      "mean_reversion": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "long_term_variance": [
+        0.03999999910593033,
+        0.03999999910593033,
+        0.03999999910593033,
+        0.03999999910593033,
+        0.03999999910593033,
+        0.03999999910593033
+      ],
+      "vol_of_vol": [
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ]
+    },
+    "uncertainty_quantification": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "model_quality": {
+    "quality_score": 100,
+    "numerical_stability": {
+      "condition_number": 4.251708030700684,
+      "stability_status": "EXCELLENT"
+    },
+    "parameter_diagnostics": {
+      "drift_range": [
+        -7.223353168228641e-05,
+        9.671748557593673e-05
+      ],
+      "volatility_range": [
+        1.0232297427137382e-06,
+        3.12528732138162e-06
+      ],
+      "jump_intensity_range": [
+        9.999999747378752e-05,
+        0.0001875299058156088
+      ],
+      "heston_mean_reversion_range": [
+        2.0,
+        2.0
+      ]
+    }
+  },
+  "trading_insights": [
+    {
+      "asset": "BTC",
+      "expected_return": 42.42640781449154,
+      "volatility": 0.7333549977809798,
+      "jump_risk": 4.456763468621112e-08,
+      "confidence": 0.5,
+      "recommendation": "UNCERTAIN"
+    },
+    {
+      "asset": "ETH",
+      "expected_return": -37.96594425220974,
+      "volatility": 0.7360120560692648,
+      "jump_risk": 1.242804251414662e-08,
+      "confidence": 0.5,
+      "recommendation": "UNCERTAIN"
+    },
+    {
+      "asset": "SOL",
+      "expected_return": 37.3562068969477,
+      "volatility": 1.2542709860479775,
+      "jump_risk": 1.2119825023547601e-08,
+      "confidence": 0.5,
+      "recommendation": "UNCERTAIN"
+    },
+    {
+      "asset": "DOGE",
+      "expected_return": -37.64119333354756,
+      "volatility": 1.281659477442499,
+      "jump_risk": 3.643472790644316e-09,
+      "confidence": 0.5,
+      "recommendation": "UNCERTAIN"
+    },
+    {
+      "asset": "BNB",
+      "expected_return": -13.879679075034801,
+      "volatility": 0.7405796903832125,
+      "jump_risk": 1.0256920099985819e-08,
+      "confidence": 0.5,
+      "recommendation": "UNCERTAIN"
+    },
+    {
+      "asset": "XRP",
+      "expected_return": 50.83471041871235,
+      "volatility": 0.9389772850445763,
+      "jump_risk": 1.4424057371213505e-08,
+      "confidence": 0.5,
+      "recommendation": "UNCERTAIN"
+    }
+  ],
+  "asset_list": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "DOGE",
+    "BNB",
+    "XRP"
+  ]
+}

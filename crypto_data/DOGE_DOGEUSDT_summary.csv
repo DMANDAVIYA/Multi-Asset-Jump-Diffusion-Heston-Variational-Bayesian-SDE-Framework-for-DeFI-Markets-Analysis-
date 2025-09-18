@@ -1,0 +1,2 @@
+crypto,symbol,data_type,records_count,start_date,end_date,min_price,max_price,avg_volume,total_trades
+DOGE,DOGEUSDT,klines_1m,3254460,2019-07-05 12:00:00,2025-09-13 16:29:00,0.0011345,0.73995,1262794.3893083339,1265048454

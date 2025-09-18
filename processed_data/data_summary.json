@@ -1,0 +1,62 @@
+{
+  "n_timesteps": 2676163,
+  "n_assets": 6,
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "DOGE",
+    "BNB",
+    "XRP"
+  ],
+  "data_quality": {
+    "no_nan_coordinates": true,
+    "no_nan_velocities": true,
+    "no_infinite_values": true,
+    "velocity_scales_reasonable": true
+  },
+  "statistics": {
+    "BTC": {
+      "logprice_mean": 1.2381480932235718,
+      "logprice_std": 0.6047656536102295,
+      "velocity_mean": 8.527446198058897e-07,
+      "velocity_std": 0.0008902198751457036,
+      "reference_price": 11828.5595703125
+    },
+    "ETH": {
+      "logprice_mean": 1.6411147117614746,
+      "logprice_std": 0.5666719675064087,
+      "velocity_mean": 9.224590371559316e-07,
+      "velocity_std": 0.0011461825342848897,
+      "reference_price": 394.1000061035156
+    },
+    "SOL": {
+      "logprice_mean": 2.8289663791656494,
+      "logprice_std": 1.3243062496185303,
+      "velocity_mean": 1.653845856708358e-06,
+      "velocity_std": 0.0018598624737933278,
+      "reference_price": 2.8499999046325684
+    },
+    "DOGE": {
+      "logprice_mean": 3.240675449371338,
+      "logprice_std": 1.1704771518707275,
+      "velocity_mean": 1.6563739109187736e-06,
+      "velocity_std": 0.0020151077769696712,
+      "reference_price": 0.0035625998862087727
+    },
+    "BNB": {
+      "logprice_mean": 2.630542039871216,
+      "logprice_std": 0.8569972515106201,
+      "velocity_mean": 1.3913013390265405e-06,
+      "velocity_std": 0.001156014739535749,
+      "reference_price": 22.350200653076172
+    },
+    "XRP": {
+      "logprice_mean": 0.8232917785644531,
+      "logprice_std": 0.6721965074539185,
+      "velocity_mean": 8.752892313168559e-07,
+      "velocity_std": 0.0015716971829533577,
+      "reference_price": 0.30121999979019165
+    }
+  }
+}

@@ -1,0 +1,2 @@
+crypto,symbol,data_type,records_count,start_date,end_date,min_price,max_price,avg_volume,total_trades
+XRP,XRPUSDT,klines_1m,3866737,2018-05-04 08:11:00,2025-09-13 16:09:00,0.10129,3.6607,247202.03294247578,1343453866
