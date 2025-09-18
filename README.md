@@ -2,7 +2,7 @@
 
 A sophisticated mathematical finance project implementing Stochastic Differential Equations (SDEs) for cryptocurrency price modeling. Uses advanced models including Jump-Diffusion processes, Heston Stochastic Volatility, and Bayesian Parameter Uncertainty Quantification.
 
-
+Download data from https://drive.google.com/drive/folders/1Bx5W9At5UhXaFVLex58CwEmtr5vcf1RU?usp=sharing 
 ## **Project Overview**
 
 ### **Mathematical Foundation**
